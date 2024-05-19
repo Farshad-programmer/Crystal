@@ -1,6 +1,8 @@
 #ifndef ENGINE_H
 #include "SDL.h"
-//#include "SDL_image.h"
+#include "SDL_image.h"
+
+
 
 
 #define SCREEN_WIDTH 960
@@ -20,8 +22,8 @@ private:
     static Engine* s_Instance;
     bool m_IsRunning;
 
-    SDL_Window* m_Window;
-    SDL_Renderer* m_Renderer;
+     SDL_Window* m_Window;
+     SDL_Renderer* m_Renderer;
 public:
 
     static Engine* GetInstance()

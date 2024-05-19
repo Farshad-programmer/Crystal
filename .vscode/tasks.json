@@ -10,14 +10,17 @@
 				"-std=c++20",
 				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\Crystal.exe",
-				"${workspaceFolder}\\src\\Core\\Engine.cpp",
-				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2", 
+				"${workspaceFolder}\\Crystal.exe", // make the .exe file from Root
+				"${workspaceFolder}\\src\\Core\\Engine.cpp", // to know Engine class
+				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2",
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
-				"-lSDL2" 
+				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
+				"-LC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\lib",
+				"-lSDL2",
+				"-lSDL2_image"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}" // make the .exe file from Root
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -34,14 +37,17 @@
 				"-std=c++20",
 				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\Crystal.exe",
+				"${workspaceFolder}\\Crystal.exe",
 				"${workspaceFolder}\\src\\Core\\Engine.cpp",
 				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2", 
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
-				"-lSDL2" 
+				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
+				"-LC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\lib",
+				"-lSDL2",
+				"-lSDL2_image"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
 			},
 			"problemMatcher": [
 				"$gcc"
@@ -58,14 +64,17 @@
 				"/std:c++latest",
 				"/EHsc",
 				"/Fe:",
-				"${fileDirname}\\Crystal.exe",
+				"${workspaceFolder}\\Crystal.exe",
 				"${workspaceFolder}\\*.cpp",
 				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2", 
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
-				"-lSDL2" 
+				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
+				"-LC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\lib",
+				"-lSDL2",
+				"-lSDL2_image"
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"
 			},
 			"problemMatcher": [
 				"$msCompile"

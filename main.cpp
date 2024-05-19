@@ -1,4 +1,4 @@
-//#include "SDL.h"
+#include "SDL.h"
 #include "src/Core/Engine.h"
 #include <iostream>
 
