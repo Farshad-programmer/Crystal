@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include <iostream>
+#include "../Graphics/TextureManager.h"
 
 Engine* Engine::s_Instance = nullptr; // since this is static object we need initilise it 
 
@@ -32,18 +33,21 @@ bool Engine::Init()
         return false;
    }
 
-
+    TextureManager::GetInstance()->Load("shroom", "assets/shroom.png");
     return m_IsRunning = true;
 }
 
 void Engine::Update()
 {
-    SDL_Log("SDL initialized successfully ");
+    SDL_Log("SDL initialized successfully333 ");
 }
 
 void Engine::Render()
 {
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
+    SDL_RenderClear(m_Renderer);
+
+    TextureManager::GetInstance()->Draw("shroom", 100, 100, 1024, 1024);
     SDL_RenderPresent(m_Renderer);
 }
 
@@ -65,7 +69,11 @@ void Engine::Events()
 
 void Engine::Clean()
 {
-
+    TextureManager::GetInstance()->Clean();
+    SDL_DestroyRenderer(m_Renderer);
+    SDL_DestroyWindow(m_Window);
+    IMG_Quit();
+    SDL_Quit();
 }
 
 void Engine::Quit()

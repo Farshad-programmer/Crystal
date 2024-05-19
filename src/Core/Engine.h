@@ -1,4 +1,5 @@
 #ifndef ENGINE_H
+#define ENGINE_H
 #include "SDL.h"
 #include "SDL_image.h"
 
@@ -31,7 +32,7 @@ public:
         return s_Instance = (s_Instance != nullptr) ? s_Instance : new Engine();
     }
     inline bool Isrunning() const {return m_IsRunning;}
-    inline SDL_Renderer* GetRenderer() const {return m_Renderer;}
+    inline SDL_Renderer* GetRenderer() {return m_Renderer;}
 };
 
 

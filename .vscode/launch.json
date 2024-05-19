@@ -5,7 +5,7 @@
       "name": "clang++ build and debug active file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/Crystal.exe",
+      "program": "${workspaceFolder}\\Crystal.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
@@ -24,7 +24,7 @@
       "name": "g++ Debug- Build and debug with GDB",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}\\Crystal.exe", // name of the .exe file
+      "program": "${workspaceFolder}\\Crystal.exe", // name of the .exe file
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",

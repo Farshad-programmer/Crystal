@@ -11,7 +11,7 @@
 				"${workspaceFolder}\\*.cpp",
 				"-o",
 				"${workspaceFolder}\\Crystal.exe", // make the .exe file from Root
-				"${workspaceFolder}\\src\\Core\\Engine.cpp", // to know Engine class
+				"${workspaceFolder}\\src\\**\\*.cpp",
 				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2",
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
 				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
@@ -38,7 +38,7 @@
 				"${workspaceFolder}\\*.cpp",
 				"-o",
 				"${workspaceFolder}\\Crystal.exe",
-				"${workspaceFolder}\\src\\Core\\Engine.cpp",
+				"${workspaceFolder}\\src\\**\\*.cpp",
 				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2", 
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
 				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
@@ -66,6 +66,7 @@
 				"/Fe:",
 				"${workspaceFolder}\\Crystal.exe",
 				"${workspaceFolder}\\*.cpp",
+				"${workspaceFolder}\\src\\**\\*.cpp",
 				"-IC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\include\\SDL2", 
 				"-LC:\\C++Libraries\\SDL2-2.28.5\\x86_64-w64-mingw32\\lib", 
 				"-IC:\\C++Libraries\\SDL2_image-2.8.2\\x86_64-w64-mingw32\\include\\SDL2",
