@@ -1,6 +1,7 @@
 #include "Engine.h"
 #include <iostream>
 #include "../Graphics/TextureManager.h"
+#include "../Physics/Transform.h"
 
 Engine* Engine::s_Instance = nullptr; // since this is static object we need initilise it 
 
@@ -34,12 +35,15 @@ bool Engine::Init()
    }
 
     TextureManager::GetInstance()->Load("shroom", "assets/shroom.png");
+
+    Transform tf(8, 4);
+    tf.Log("tf: ");
     return m_IsRunning = true;
 }
 
 void Engine::Update()
 {
-    SDL_Log("SDL initialized successfully333 ");
+    //SDL_Log("SDL initialized successfully333 ");
 }
 
 void Engine::Render()
